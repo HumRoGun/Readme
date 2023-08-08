@@ -1,18 +1,23 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from "react-dom/client";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MenuTabs from './MenuTabs';
+import Footer from './footer';
 
 function App(){
   return( 
     <div className="container">
       <MenuTabs />
+      <div className='text-center'><h4>เมนูอาหารยอดฮิตญี่ปุ่น</h4></div>
 <div className="card-group" >
   <div className="card border-0">
     <div class="card-body ">
         <Avatar />
         <div className="card-text">
-            <Intro />    
+            <Intro />
+        
+       
+    
         </div>
       </div>
     </div>
@@ -28,16 +33,17 @@ function App(){
       <div class="card-body">
       <Avatar3 />
         <div className="card-text">
-            <Intro3 />    
+            <Intro3 />
         </div>
       </div>
     </div>
-
-    </div>
+      </div>
+      
+      <Footer />
+    
   </div>
   );
 }
-
 
 function Intro(){
   return(
@@ -49,8 +55,8 @@ function Intro(){
       ด้วยสัมผัสที่กรอบนอกนุ่มใน อร่อยได้ในคำเดียว ทำให้เป็นหนึ่งในเมนูยอดนิยมของคนไทยเลยก็ว่าได้ 
       ซึ่งสูตรนี้ได้มาจาก เชฟโฌ เชฟชาวญี่ปุ่นแท้ ๆ เลยทีเดียว รับรองว่า 
       ถ้าทำขาย รสชาติอร่อย ไม่แพ้ร้านอาหารญี่ปุ่นชื่อดังแน่นอน 
-      
       </p>
+     
     </div>
   );
 }
@@ -66,6 +72,7 @@ function Intro2(){
       ไม่ต้องไปกินที่ร้าน ชามละ 200 - 300 บาท แล้วละก็ ทำตามสูตรนี้ได้เลย รับรองว่า 
       อร่อยไม่แพ้กัน
       </p>
+ 
     </div>
   );
 }
@@ -80,17 +87,20 @@ function Intro3(){
       ปลาหมึกยักษ์ญี่ปุ่น  และ ใช้เฉพาะส่วนหนวด มาทำเป็นไส้ ซึ่งถ้าหากใครอยากทำตาม 
       ก็อาจต้องลงทุนกันสักหน่อย เพราะปลาหมึกชนิดนี้ ค่อนข้างมีราคาแพงไม่น้อยเลยทีเดียว
       </p>
+  
     </div>
   );
 }
-function Avatar(){
-  return <img className="rounded-circle" src="butod.png"  alt="" width="150" height="150"></img>
-}
 
+
+
+function Avatar(){
+  return <img className="rounded-circle" src="butod.png"  alt="" width="200" height="200  "></img>
+}
 function Avatar2(){
-  return <img className="rounded-circle" src="oudong.png" alt=" "width="150" height="150"></img>
+  return <img className="rounded-circle" src="oudong.png" alt=" "width="200" height="200"></img>
 }function Avatar3(){
-  return <img className="rounded-circle" src="tako.png" alt=""width="150" height="150"></img>
+  return <img className="rounded-circle" src="tako.png" alt=""width="200" height="200"></img>
 }
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

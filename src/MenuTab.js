@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const MenuTab = ({ title, content, activeTab, onClick }) => {
   return (
